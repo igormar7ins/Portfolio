@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.name {
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  span {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-left: auto;
+    letter-spacing: 4px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
