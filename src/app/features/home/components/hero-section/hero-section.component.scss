@@ -1,40 +1,39 @@
 :host {
   display: flex;
+  width: 587px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
-
+  margin-top: 122px;
 
   .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
+    line-height: 1.2;
 
     h1 {
       font-size: 65px;
       font-weight: 700;
       letter-spacing: -2px;
     }
-    h2 {
-      font-size: 26;
-      font-weight: 600;
 
+    h2 {
+      font-size: 26px;
+      font-weight: 600;
     }
   }
 
   .descricao {
-    font-size: 13px;
-    font-weight: 500;
-    width: 700px;
+    font-size: 16px;
     text-align: center;
-
+    color: var(--color-quaternary);
   }
+  
   button {
-    border-radius: 25px;
-
+    width: 187px;
+    height: 55px;
   }
 }
