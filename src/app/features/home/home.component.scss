@@ -6,8 +6,10 @@
   align-items: center;
 }
 
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
+// 
+.subtitle-background {
+  background-image: linear-gradient(to right, #9C83FF, #FF9051);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

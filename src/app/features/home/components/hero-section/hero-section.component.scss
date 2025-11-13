@@ -24,6 +24,12 @@
       font-size: 26px;
       font-weight: 600;
     }
+    .subtitle-linear {
+      background-image: linear-gradient(to right, #9C83FF, #FF9051);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
   }
 
   .descricao {
@@ -31,7 +37,7 @@
     text-align: center;
     color: var(--color-quaternary);
   }
-  
+
   button {
     width: 187px;
     height: 55px;
