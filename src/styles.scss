@@ -4,7 +4,14 @@
   --color-secondary: #ffffff;
   --color-tertiary: #9a9a9a;
   --color-quaternary: #e1e1e1;
-  --color-linear-subtitle: linear-gradient(to right, #9C83FF, #FF9051);;
+
+  --color-gradient-1: #9c83ff;
+  --color-gradient-2: #ff9051;
+  --color-linear-subtitle: linear-gradient(
+    to right,
+    var(--color-gradient-1),
+    var(--color-gradient-2)
+  );
 }
 
 html,
@@ -26,4 +33,11 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+.ptf-gradient-text {
+  background-image: var(--color-linear-subtitle);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
