@@ -5,6 +5,7 @@
   align-items: center;
   margin-top: 150px;
   gap: 35px;
+  width: 100%;
 
   .title {
     display: flex;
@@ -27,5 +28,6 @@
 
   .content {
     color: var(--color-quaternary);
+    width: 100%;
   }
 }

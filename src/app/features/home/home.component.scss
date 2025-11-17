@@ -26,7 +26,8 @@ app-section-wrapper {
 
     .icon {
       font-size: 35px;
-      
+      color: var(--color-secondary);
+
     }
   }
   p {
@@ -35,5 +36,13 @@ app-section-wrapper {
       text-align: left;
       padding: 37px 0;
     }
+  }
+
+  .projects-wrapper{
+    display: grid;
+    word-break: break-all;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px;
   }
 }
