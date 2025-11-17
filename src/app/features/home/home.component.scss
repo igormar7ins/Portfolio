@@ -6,13 +6,34 @@
   align-items: center;
 }
 
-.experience-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  font-weight: 400;
+app-section-wrapper {
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: var(--color-secondary);
 
-  .job-title {
-    font-size: 18px;
+    .job-title {
+      font-size: 18px;
+    }
+  }
+
+  .icons-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+
+    .icon {
+      font-size: 35px;
+      
+    }
+  }
+  p {
+    text-align: center;
+    &.job-description {
+      text-align: left;
+      padding: 37px 0;
+    }
   }
 }

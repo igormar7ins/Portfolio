@@ -7,7 +7,7 @@
 
   --color-gradient-1: #9c83ff;
   --color-gradient-2: #ff9051;
-  --color-linear-subtitle: linear-gradient(
+  --color-linear: linear-gradient(
     to right,
     var(--color-gradient-1),
     var(--color-gradient-2)
@@ -36,7 +36,7 @@ h6 {
 }
 
 .ptf-gradient-text {
-  background-image: var(--color-linear-subtitle);
+  background-image: var(--color-linear);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
