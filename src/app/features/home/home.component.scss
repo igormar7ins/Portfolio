@@ -4,20 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.sub-title-h3 {
+.experience-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-  padding: 0 30px;
   font-weight: 400;
 
-  #job-title {
+  .job-title {
     font-size: 18px;
-  }
-  #job-date {
-    font-size: 11px;
   }
 }

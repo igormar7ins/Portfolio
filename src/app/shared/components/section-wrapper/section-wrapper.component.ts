@@ -10,4 +10,5 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 export class SectionWrapperComponent {
   title = input<string>();
   subtitle = input<string>();
+  textAlign = input<'left' | 'center' | 'right'>('center');
 }
