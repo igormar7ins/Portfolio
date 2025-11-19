@@ -1,8 +1,14 @@
-@use "app/shared/directives/button.directive.scss";
+@use 'app/shared/directives/button.directive.scss';
 :root {
   --color-primary: #000000;
   --color-secondary: #ffffff;
   --color-tertiary: #9a9a9a;
+  --color-quaternary: #e1e1e1;
+  --color-quinary: #878787;
+
+  --color-gradient-1: #9c83ff;
+  --color-gradient-2: #ff9051;
+  --color-linear: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
 }
 
 html,
@@ -10,9 +16,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--color-primary);
-  color: var(--color-secondary)
+  color: var(--color-secondary);
 }
 
 p,
@@ -26,3 +32,13 @@ h6 {
   padding: 0;
 }
 
+.ptf-gradient-text {
+  background-image: var(--color-linear);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ptf-icon {
+  font-size: 35px;
+  color: var(--color-secondary);
+}

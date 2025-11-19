@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  gap: 35px;
+  width: 100%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+
+    h1 {
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 4px;
+    }
+  }
+
+  .content {
+    color: var(--color-quaternary);
+    width: 100%;
+  }
+}

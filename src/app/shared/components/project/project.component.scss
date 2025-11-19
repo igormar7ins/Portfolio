@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  gap: 20px;
+}
+.image-wrapper {
+  width: 126px;
+  height: 70px;
+  padding: 5px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+.info {
+  h3 {
+    font-weight: 700;
+  }
+  p {
+    color: var(--color-quinary);
+    font-size: 13px;
+  }
+}

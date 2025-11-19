@@ -1,0 +1,42 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+app-section-wrapper {
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: var(--color-secondary);
+
+    .job-title {
+      font-size: 18px;
+    }
+  }
+
+  .icons-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+  }
+  p {
+    text-align: center;
+    &.job-description {
+      text-align: left;
+      padding: 37px 0;
+    }
+  }
+
+  .projects-wrapper {
+    display: grid;
+    word-break: break-all;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px;
+  }
+}
