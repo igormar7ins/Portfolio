@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { ButtonDirective } from '../../directives/button.directive';
 
 @Component({
@@ -6,7 +6,6 @@ import { ButtonDirective } from '../../directives/button.directive';
   imports: [ButtonDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
 

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, InputSignal, Renderer2, input } from '@angular/core';
+import { Directive, ElementRef, InputSignal, Renderer2, effect, input } from '@angular/core';
 
 @Directive({
   selector: '[appButton]',
