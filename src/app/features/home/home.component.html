@@ -5,33 +5,25 @@
   }
 </app-section-wrapper>
 <app-section-wrapper title="experience" subtitle="explore now">
-  @for(i of profile?.experience; track i.company){
+  @for(item of profile?.experience; track item){
   <div class="experience-header">
-    <p class="job-title"><strong> {{i.company}} /</strong> {{i.role}} </p>
-    <p class="job-date"> {{i.startDate}} / {{i.endDate}} | {{i.location}} </p>
+    <p class="job-title"><strong> {{item.company}} /</strong> {{item.role}} </p>
+    <p class="job-date"> {{item.startDate}} / {{item.endDate}} | {{item.location}} </p>
   </div>
 
-  <P class="job-description"> {{i.description}} </P>
+  <P class="job-description"> {{item.description}} </P>
   <div class="icons-wrapper">
     <i class="ptf-icon fa-brands fa-square-js"></i>
     <i class="ptf-icon fa-brands fa-html5"></i>
     <i class="ptf-icon fa-brands fa-css3-alt"></i>
   </div>
   <br><br>
-}
+  }
 </app-section-wrapper>
 <app-section-wrapper title="projects" subtitle="explore now">
+  @for (item of profile?.projects; track item) {
   <div class="projects-wrapper">
-    <app-project title="project1" description="description project asdasdadasdsadasdasdasdasdasdasddkkkk"
-      urlImage="/assets/images/logo-fake.jpg" />
-    <app-project title="project1"
-      description="description project asdasdadasdsadasdasdasdasdasdasddddddddddddddddddddddddddddddddddddd"
-      urlImage="/assets/images/logo-fake.jpg" />
-    <app-project title="project1"
-      description="description project asdasdadasdsadasdasdasdasdasdasddddddddddddddddddddddddddddddddddddd"
-      urlImage="/assets/images/logo-fake.jpg" />
-    <app-project title="project1"
-      description="description project asdasdadasdsadasdasdasdasdasdasddddddddddddddddddddddddddddddddddddd"
-      urlImage="/assets/images/logo-fake.jpg" />
+    <app-project [title]="item.name" [description]="item.description" [urlImage]="item.image" />
   </div>
+  }
 </app-section-wrapper>
