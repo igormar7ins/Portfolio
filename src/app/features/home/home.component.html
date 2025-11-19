@@ -1,11 +1,14 @@
 <app-hero-section />
 <app-section-wrapper title="About Me" subtitle="Explore now">
-  @for(item of profile?.about; track item){
+
+  @for(item of profile()?.about; track item){
   <p>{{item}}</p>
   }
+
 </app-section-wrapper>
 <app-section-wrapper title="experience" subtitle="explore now">
-  @for(item of profile?.experience; track item){
+
+  @for(item of profile()?.experience; track item){
   <div class="experience-header">
     <p class="job-title"><strong> {{item.company}} /</strong> {{item.role}} </p>
     <p class="job-date"> {{item.startDate}} / {{item.endDate}} | {{item.location}} </p>
@@ -19,11 +22,14 @@
   </div>
   <br><br>
   }
+
 </app-section-wrapper>
 <app-section-wrapper title="projects" subtitle="explore now">
-  @for (item of profile?.projects; track item) {
+
+  @for (item of profile()?.projects; track item) {
   <div class="projects-wrapper">
     <app-project [title]="item.name" [description]="item.description" [urlImage]="item.image" />
   </div>
   }
+
 </app-section-wrapper>

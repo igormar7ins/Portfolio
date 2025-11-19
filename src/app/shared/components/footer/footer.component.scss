@@ -12,6 +12,11 @@
   justify-content: center;
   gap: 20px;
 
+  .fa-brands {
+    text-decoration: none;
+    color: var(--color-secondary);
+  }
+
   i {
     font-size: 30px;
   }

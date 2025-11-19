@@ -1,12 +1,12 @@
 <img ngSrc="/assets/images/me.png" alt="Ibrahim Memon Profile Picture" width="231" height="231" priority />
 
 <div class="title">
-  <h1>{{profile?.firstName }} {{profile?.surname}}!</h1>
-  <h2> {{profile?.headline}} <span class="ptf-gradient-text"> {{profile?.headlineGradient}} </span>🍿</h2>
+  <h1>{{profile()?.firstName }} {{profile()?.surname}}!</h1>
+  <h2> {{profile()?.headline}} <span class="ptf-gradient-text"> {{profile()?.headlineGradient}} </span>🍿</h2>
 </div>
 
 <p class="descricao">
-  {{profile?.generalDescription}}
+  {{profile()?.generalDescription}}
 </p>
 
 <button appButton="secondary" [rounded]="true">Contact me</button>

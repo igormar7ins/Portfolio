@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ProfileService } from '../../../core/services/profile.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-
+  private profileService = inject(ProfileService);
+  public profile = this.profileService.profile;
 }

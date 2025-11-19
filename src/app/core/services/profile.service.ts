@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { ProfileModel } from '../models/profile.model';
@@ -9,11 +9,14 @@ import { ProfileModel } from '../models/profile.model';
 })
 export class ProfileService {
   httpClient = inject(HttpClient);
-  profile: ProfileModel | null = null;
+  private readonly _profile = signal<ProfileModel | null>(null);
+  public readonly profile = this._profile.asReadonly();
 
   public loadProfile(): Observable<ProfileModel> {
-    return this.httpClient.get<ProfileModel>(environment.profileUrl).pipe(tap((data) => {
-      this.profile = data;
-    }));
+    return this.httpClient.get<ProfileModel>(environment.profileUrl).pipe(
+      tap((data) => {
+        this._profile.set(data);
+      })
+    );
   }
 }

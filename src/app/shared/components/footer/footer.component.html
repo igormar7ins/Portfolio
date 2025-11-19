@@ -1,7 +1,15 @@
 <div class="icons-wrapper">
-  <i class="fa-brands fa-github"></i>
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-linkedin"></i>
+    @if (profile()?.social?.github) {
+      <a [href]="profile()?.social?.github" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+    }
+
+    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+
+    @if (profile()?.social?.linkedin) {
+      <a [href]="profile()?.social?.linkedin" target="_blank" rel="noopener noreferrer"><i
+          class="fa-brands fa-linkedin"></i></a>
+    }
+
 </div>
 
 <p class="description">Desenvolvido por NOME - ©2025</p>
