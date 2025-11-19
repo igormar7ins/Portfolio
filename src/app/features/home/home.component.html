@@ -1,16 +1,8 @@
 <app-hero-section />
-<!-- <img class="background-image" src="/assets/images/background-home.png" priority> -->
-
 <app-section-wrapper title="About Me" subtitle="Explore now">
-  <p>
-    Explore my work, learn about my expertise, and discover how I can contribute to your next
-    project. Dive in to see what I've been working on!
-  </p>
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt id, doloremque, ullam
-    nostrum, soluta veniam itaque neque ex odio quis excepturi qui beatae facilis autem aliquam
-    rerum vitae totam fuga!
-  </p>
+  @for(item of profile?.about; track item){
+    <p>{{item}}</p>
+  }
 </app-section-wrapper>
 <app-section-wrapper title="experience" subtitle="explore now">
   <div class="experience-header">

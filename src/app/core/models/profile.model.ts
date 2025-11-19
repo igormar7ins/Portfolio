@@ -1,4 +1,4 @@
-export interface PortfolioData {
+export interface ProfileModel {
   firstName: string;
   surname: string;
   role: string;
