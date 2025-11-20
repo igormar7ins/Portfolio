@@ -15,21 +15,21 @@
   </div>
 
   <P class="job-description"> {{item.description}} </P>
+}
   <div class="icons-wrapper">
-    <i class="ptf-icon fa-brands fa-square-js"></i>
     <i class="ptf-icon fa-brands fa-html5"></i>
     <i class="ptf-icon fa-brands fa-css3-alt"></i>
+    <i class="ptf-icon fa-brands fa-square-js"></i>
   </div>
-  <br><br>
-  }
+  
+
 
 </app-section-wrapper>
 <app-section-wrapper title="projects" subtitle="explore now">
-
   @for (item of profile()?.projects; track item) {
-  <div class="projects-wrapper">
-    <app-project [title]="item.name" [description]="item.description" [urlImage]="item.image" />
-  </div>
+    <div class="projects-wrapper">
+      <app-project [title]="item.name" [description]="item.description" [urlImage]="item.image" />
+    </div>
   }
 
 </app-section-wrapper>
